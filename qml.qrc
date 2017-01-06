@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>images/de.png</file>
+        <file>images/en.png</file>
+        <file>images/no.png</file>
+        <file>images/ru.png</file>
+        <file>main.cpp</file>
+        <file>qmldir</file>
+        <file>styles.qml</file>
+    </qresource>
+</RCC>
