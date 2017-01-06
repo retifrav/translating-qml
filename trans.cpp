@@ -22,14 +22,14 @@ void Trans::selectLanguage(QString language)
 //    dir.cdUp();
 //    dir.cdUp();
 //    #endif
-    qDebug() << dir.path();
+//    qDebug() << dir.path();
 
     if (!translator->load(
                 // for example, in case of "ru" language the file would be
                 // translating-qml_ru.qm
                 // extension is set automatically
                 QString("translating-qml_%1").arg(language),
-                // look for the file in the "i18n" near the application
+                // look for the file in i18n folder within working directory
                 QString("%1/i18n").arg(dir.path())
                 )
             )
