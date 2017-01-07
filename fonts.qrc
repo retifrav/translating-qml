@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>fonts/TitilliumWeb-Regular.ttf</file>
+        <file>fonts/Pacifico.ttf</file>
+    </qresource>
+</RCC>
