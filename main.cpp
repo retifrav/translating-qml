@@ -8,6 +8,7 @@
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
+//    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 
     // set the custom font from resources
     int id = QFontDatabase::addApplicationFont(":/fonts/TitilliumWeb-Regular.ttf");

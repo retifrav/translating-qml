@@ -195,7 +195,7 @@ ApplicationWindow {
 
         Label {
             topPadding: 15
-            font.pixelSize: Styles.secondaryFontSize
+            font.pixelSize: Styles.primaryFontSize
             text: qsTr("When the communism will come, everything'll be fuckin A!<br/>"
                        + "It will come very soon - we just only need to wait!<br/>"
                        + "All the stuff will be for free, everything will be so cool!<br/>"
@@ -204,21 +204,21 @@ ApplicationWindow {
         }
 
         Label {
-            font.pixelSize: Styles.secondaryFontSize
+            font.pixelSize: Styles.primaryFontSize
             text: qsTr("I woke up after midnight and realised - <b>IT DOES</b>!<br/>"
                        + "Everything goes according to the plan.")
                   + trans.emptyString
         }
 
         Label {
-            font.pixelSize: Styles.secondaryFontSize
+            font.pixelSize: Styles.primaryFontSize
             text: qsTr("<font color='blue'><i>Egor Letov</i></font>")
                   + trans.emptyString
         }
 
         Button {
             text: qsTr("Simple button") + trans.emptyString
-            font.pixelSize: Styles.secondaryFontSize
+            font.pixelSize: Styles.primaryFontSize
             onClicked: console.log(qsTr("Some output into console") + trans.emptyString)
 
             ToolTip.visible: pressed
