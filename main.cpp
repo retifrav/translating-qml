@@ -15,10 +15,9 @@ int main(int argc, char *argv[])
     app.setFont(QFont(QFontDatabase::applicationFontFamilies(id).at(0)));
     // you can just comment this, really
 
-    // object of our class with "magic" property for translation
-    Trans trans;
-
     QQmlApplicationEngine engine;
+    // object of our class with "magic" property for translation
+    Trans trans(&engine);
     // make this object available from QML side
     engine.rootContext()->setContextProperty("trans", &trans);
     engine.load(QUrl(QLatin1String("qrc:/main.qml")));

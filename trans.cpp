@@ -1,17 +1,15 @@
 #include "trans.h"
-#include <QDebug>
-#include <QGuiApplication>
-#include <QDir>
 
-Trans::Trans()
+Trans::Trans(QQmlEngine *engine)
 {
-    translator = new QTranslator(this);
+    _translator = new QTranslator(this);
+    _engine = engine;
 }
 
-QString Trans::getEmptyString()
-{
-    return QString();
-}
+//QString Trans::getEmptyString()
+//{
+//    return QString();
+//}
 
 void Trans::selectLanguage(QString language)
 {
@@ -24,7 +22,7 @@ void Trans::selectLanguage(QString language)
 //    #endif
 //    qDebug() << dir.path();
 
-    if (!translator->load(
+    if (!_translator->load(
                 // for example, in case of "ru" language the file would be
                 // translating-qml_ru.qm
                 // extension is set automatically
@@ -37,7 +35,8 @@ void Trans::selectLanguage(QString language)
         qDebug() << "Failed to load translation file, falling back to English";
     }
     // it's a global thing, we can use it anywhere (after #including <QGuiApplication>)
-    qApp->installTranslator(translator);
+    qApp->installTranslator(_translator);
+    _engine->retranslate();
 
     emit languageChanged();
 }

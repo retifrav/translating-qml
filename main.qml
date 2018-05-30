@@ -200,29 +200,29 @@ ApplicationWindow {
                        + "It will come very soon - we just only need to wait!<br/>"
                        + "All the stuff will be for free, everything will be so cool!<br/>"
                        + "There will probably no need to even die no matter what!")
-                  + trans.emptyString
+                  //+ trans.emptyString
         }
 
         Label {
             font.pixelSize: Styles.primaryFontSize
             text: qsTr("I woke up after midnight and realised - <b>IT DOES</b>!<br/>"
                        + "Everything goes according to the plan.")
-                  + trans.emptyString
+                  //+ trans.emptyString
         }
 
         Label {
             font.pixelSize: Styles.primaryFontSize
             text: qsTr("<font color='blue'><i>Egor Letov</i></font>")
-                  + trans.emptyString
+                  //+ trans.emptyString
         }
 
         Button {
-            text: qsTr("Simple button") + trans.emptyString
+            text: qsTr("Simple button") //+ trans.emptyString
             font.pixelSize: Styles.primaryFontSize
-            onClicked: console.log(qsTr("Some output into console") + trans.emptyString)
+            onClicked: console.log(qsTr("Some output into console")) //+ trans.emptyString)
 
             ToolTip.visible: pressed
-            ToolTip.text: qsTr("Some tooltip") + trans.emptyString
+            ToolTip.text: qsTr("Some tooltip") //+ trans.emptyString
         }
 
         Tumbler {
@@ -234,7 +234,7 @@ ApplicationWindow {
 
             delegate: ItemDelegate {
                 // because you cannot do scripts in model(?)
-                text: qsTr(model.title) + trans.emptyString
+                text: qsTr(model.title) //+ trans.emptyString
                 opacity: 0.4 + Math.max(0, 1 - Math.abs(Tumbler.displacement)) * 0.6
                 font.pixelSize: Styles.secondaryFontSize;
             }
