@@ -28,7 +28,7 @@ ApplicationWindow {
                     anchors.fill: parent
                     opacity: parent.pressed ? 0.8 : 1
                     anchors.margins: 3
-                    source: "/images/en.png"
+                    source: "./images/en.png"
                 }
 
                 background: Rectangle {
@@ -74,7 +74,7 @@ ApplicationWindow {
                     anchors.fill: parent
                     opacity: parent.pressed ? 0.8 : 1
                     anchors.margins: 3
-                    source: "/images/ru.png"
+                    source: "./images/ru.png"
                 }
                 background: Rectangle {
                     id: flag_ru
@@ -118,7 +118,7 @@ ApplicationWindow {
                     anchors.fill: parent
                     opacity: parent.pressed ? 0.8 : 1
                     anchors.margins: 3
-                    source: "/images/no.png"
+                    source: "./images/no.png"
                 }
                 background: Rectangle {
                     id: flag_no
@@ -162,7 +162,7 @@ ApplicationWindow {
                     anchors.fill: parent
                     opacity: parent.pressed ? 0.8 : 1
                     anchors.margins: 3
-                    source: "/images/de.png"
+                    source: "./images/de.png"
                 }
                 background: Rectangle {
                     id: flag_de
