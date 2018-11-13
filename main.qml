@@ -244,7 +244,11 @@ ApplicationWindow {
                 ListElement { title: qsTr("sickle"); }
                 ListElement { title: qsTr("hammer"); }
                 ListElement { title: qsTr("star"); }
-                ListElement { title: qsTr("lantern"); }
+
+                // to demonstrate dynamically added items
+                Component.onCompleted: {
+                    append({ title: qsTr("lantern") });
+                }
             }
             visibleItemCount: 5
         }
